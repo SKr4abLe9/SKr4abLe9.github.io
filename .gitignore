@@ -1,0 +1,14 @@
+# Hugo 生成目录
+/public/
+/resources/_gen/
+
+# Hugo 本地构建状态
+.hugo_build.lock
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# 编辑器，可选
+.vscode/
+.idea/

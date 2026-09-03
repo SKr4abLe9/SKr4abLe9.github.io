@@ -11,8 +11,14 @@ main:
     params:
       icon: archive
 
-  - name: 标签
+  - name: 分类
     weight: 30
+    pageRef: /categories
+    params:
+      icon: categories
+
+  - name: 标签
+    weight: 40
     pageRef: /tags
     params:
       icon: tags

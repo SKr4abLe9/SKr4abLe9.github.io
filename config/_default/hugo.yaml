@@ -16,7 +16,7 @@ enableRobotsTXT: true
 mainSections: ["posts"]  # Multiple values can be configured, e.g. ["posts", "blog", "articles"]
 
 permalinks:
-  posts: /posts/:slug/
+  # posts: /posts/:slug/
   projects: /projects/:slug/
   pages: /:slug/
 

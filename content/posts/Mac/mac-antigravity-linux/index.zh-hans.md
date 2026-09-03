@@ -3,15 +3,13 @@ title: 'Mac Antigravity IDE 无法连接 OrbStack x86_64 Ubuntu 26.04 LTS'
 date: 2026-09-03T10:42:29+08:00
 draft: false
 description: 解决 Apple Silicon Mac 上 Antigravity 通过 SSH 连接 OrbStack x86_64 Linux 时，GNU tar 报 Function not implemented 导致远程服务器安装失败的问题。
-tags:
-  - mac
-  - antigravity
-  - orbstack
-  - linux
+categories: ["mac"]
+tags: ["antigravity", "orbstack", "linux"]
+slug: "antigravity-orbstack"
 cover:
 ---
 
-### 问题
+## 问题
 
 Mac 上使用 Antigravity IDE 通过 SSH 远程连接到 OrbStack 中启动的 x86_64 Ubuntu 26.04 LTS 虚拟机时，卡在 `Setting up SSH Host: Launching SSH server...`
 
@@ -26,19 +24,19 @@ Apple Silicon Mac 上运行 amd64/x86_64 OrbStack VM，并使用 Rosetta 执行 
 
 [^1]: https://github.com/orbstack/orbstack/issues/2588
 
-### 解决方案
+## 解决方案
 
 安装 `bsdtar`，并在 `/usr/local/bin` 中创建名为 `tar` 的软链接，使其通过 `PATH` 优先于系统自带的 `/usr/bin/tar`。
 
+{{< tabs >}}
+{{< tab label="安装" >}}
 ```bash
 sudo apt update
 sudo apt install libarchive-tools
 
 sudo ln -s /usr/bin/bsdtar /usr/local/bin/tar
 ```
-
-验证：
-{{< tabs >}}
+{{< /tab >}}
 {{< tab label="验证" >}}
 ``` bash
 which tar

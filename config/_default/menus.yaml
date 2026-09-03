@@ -11,8 +11,14 @@ main:
     params:
       icon: archive
 
-  - name: Tags
+  - name: Categories
     weight: 30
+    pageRef: /categories
+    params:
+      icon: categories
+
+  - name: Tags
+    weight: 40
     pageRef: /tags
     params:
       icon: tags

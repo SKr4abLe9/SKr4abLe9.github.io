@@ -1,11 +1,11 @@
 # Basic site info with SEO
-description: "A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design."
-keywords: ["Hugo", "Blog", "Theme", "Technology", "Programming"]
-defaultAuthor: "Hugo Narrow"
-language: "en"
-shortName: "Hugo Narrow" # PWA
-images:
-  - "/images/og-default.avif"
+description: "hykokk 的个人技术博客，记录C++相关的学习笔记以及教程。"
+keywords: ["C++", "C", "Qt", "Linux", "Programming"]
+defaultAuthor: "hykokk"
+language: "zh-cn"
+shortName: "hykokk Blog" # PWA
+# images:
+#   - "/images/og-default.avif"
 
 # Favicon
 favicon:
